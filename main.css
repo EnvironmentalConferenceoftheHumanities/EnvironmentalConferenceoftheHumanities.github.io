@@ -385,12 +385,12 @@ h1 {
 
 .nav-buttons a:hover {
   transform: scale(1.06);
-  background: #a3b09d;
+  background: #b5b5b5;
 }
 
 .nav-buttons a.active,
 .navbar .hamburger-menu a.active {
-  background: #4a6b4a;
+  background: #6e6e6e;
   color: #fff;
 }
 
@@ -420,20 +420,30 @@ h1 {
   background: #f5f5f5;
 }
 
-/* History page: sponsor logos fill the left column */
+/* History page: sponsor logos clustered in the left column, mixed sizes
+   so they read as a group rather than a stack */
 .left .sponsor-logos {
-  flex-direction: column;
-  gap: 28px;
-  padding: 10px 0 30px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 24px 32px;
+  padding: 30px 10px;
 }
 
 .left .sponsor-logos img {
   width: auto;
-  max-width: 70%;
-  height: auto;
-  max-height: 120px;
+  height: 90px;
+  max-width: 45%;
   object-fit: contain;
 }
+
+.left .sponsor-logos img:nth-child(1) { height: 120px; }  /* University of Lethbridge */
+.left .sponsor-logos img:nth-child(2) { height: 150px; }  /* LPIRG */
+.left .sponsor-logos img:nth-child(3) { height: 100px; }
+.left .sponsor-logos img:nth-child(4) { height: 80px;  }
+.left .sponsor-logos img:nth-child(5) { height: 110px; }
+.left .sponsor-logos img:nth-child(6) { height: 85px;  }
 
 /* Year dropdowns in the desktop nav */
 .dropdown {
@@ -454,11 +464,11 @@ h1 {
 
 .nav-buttons .dropdown-toggle:hover,
 .dropdown:focus-within .dropdown-toggle {
-  background: #a3b09d;
+  background: #b5b5b5;
 }
 
 .nav-buttons .dropdown-toggle.active {
-  background: #4a6b4a;
+  background: #6e6e6e;
   color: #fff;
 }
 
@@ -491,13 +501,13 @@ h1 {
 
 .nav-buttons .dropdown-menu a:hover {
   transform: none;
-  background: #dfe5dc;
+  background: #e0e0e0;
 }
 
 .nav-buttons .dropdown-menu a.active {
-  background: #4a6b4a;
+  background: #6e6e6e;
   color: #fff;
-  border-left-color: #4a6b4a;
+  border-left-color: #6e6e6e;
 }
 
 /* Mobile menu: year headings with their pages indented underneath */
@@ -578,5 +588,21 @@ h1 {
   }
   .single {
     padding: 20px 16px;
+  }
+}
+
+/* A single list flowing over two columns (2026 Call for Papers) */
+ul.two-col {
+  columns: 2;
+  column-gap: 40px;
+}
+
+ul.two-col li {
+  break-inside: avoid;
+}
+
+@media (max-width: 600px) {
+  ul.two-col {
+    columns: 1;
   }
 }
