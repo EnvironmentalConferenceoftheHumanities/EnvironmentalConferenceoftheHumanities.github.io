@@ -12,87 +12,69 @@
 <header class="header">
   <!-- Header Image -->
   <div class="header-image-wrapper">
-    <img src="img/head_short.png" alt="Header Image" class="header-image">
+    <img src="img/head_short.png" alt="" class="header-image">
   </div>
 
-  <!-- Navigation Bar -->
+  <!-- Navigation Bar (shared across the hub and every conference year) -->
   <nav class="navbar">
-    <a href="index.html" class="logo">
-      <img src="img/ecoth_simple.png" alt="Logo">
+    <a href="/" class="logo">
+      <img src="img/ecoth_simple.png" alt="ECOTH Home">
     </a>
 
     <!-- MOBILE-ONLY HAMBURGER (CSS-only) -->
     <input type="checkbox" id="menu-toggle" class="menu-toggle">
     <label for="menu-toggle" class="hamburger-icon" aria-label="Toggle navigation" aria-controls="mobile-menu">☰</label>
 
-    <!-- Use a DIV (not a nested <nav>) to avoid UA styles on desktop -->
     <div class="hamburger-menu" id="mobile-menu" aria-label="Mobile">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="tips.html">Tips</a>
-      <a href="/ECOTH2025/">ECOTH 2025</a>
-      <a href="/ECOTH2026/">ECOTH 2026</a>
+      <a href="/" class="active" aria-current="page">Home</a>
+      <a href="/history.html">History</a>
+      <a href="/tips.html">Tips</a>
+      <a href="/ECOTH2025/">2025</a>
+      <a href="/ECOTH2026/">2026</a>
     </div>
 
-    <!-- Desktop image buttons -->
+    <!-- Desktop text buttons -->
     <div class="nav-buttons">
-      <a href="index.html"><img src="img/home.png" alt="Home Button"></a>
-      <a href="about.html"><img src="img/about.png" alt="About Button"></a>
-      <a href="tips.html"><img src="img/tips.png" alt="Tips Button"></a>
-      <a href="/ECOTH2025/" class="year-button">2025</a>
-      <a href="/ECOTH2026/" class="year-button">2026</a>
+      <a href="/" class="active" aria-current="page">Home</a>
+      <a href="/history.html">History</a>
+      <a href="/tips.html">Tips</a>
+      <a href="/ECOTH2025/">2025</a>
+      <a href="/ECOTH2026/">2026</a>
     </div>
   </nav>
 
   <p class="header-text">Environmental Conference of the Humanities</p>
 </header>
 
+<main class="single">
+  <h1>Home</h1>
+  <p>ECOTH is an open conference that made its debut in November 2025 and encourages emerging scholars (Undergraduate, Master, and PhD students, as well as, post-doctoral researchers and scholars in early stages of their career), along with any academic who is interested in the subject to present their research in this field. Environmental Humanities has emerged as an interdisciplinary subject and embraces the fact that environmental concerns are, in their nature, interdisciplinary.</p>
 
-    <!-- Main Container for Left and Right Columns -->
-    <div class="container">
-        <!-- Left Column -->
-        <div class="left">
-            <img src="img/ecoth_logo.png" alt="ECOTH Logo">
-            <p></p>
-        </div>
+  <p>For information please contact: <strong>ecoth.uleth@gmail.com</strong></p>
 
-        <!-- Right Column -->
-        <div class="right">
-            <!-- Project Information Section -->
-            <div class="info">
-                <h1>Home</h1>
-<p>ECOTH is an open conference that made its debut in November 2025 and encourages emerging scholars (Undergraduate, Master, and PhD students, as well as, post-doctoral researchers and scholars in early stages of their career), along with any academic who is interested in the subject to present their research in this field. Environmental Humanities has emerged as an interdisciplinary subject and embraces the fact that environmental concerns are, in their nature, interdisciplinary.</p>
-
-    <h3>Choose a Conference Year</h3>
-<div class="year-cards">
-  <a href="/ECOTH2026/" class="year-card">
-    <img src="img/river.jpg" alt="River valley">
-    <span class="year-card-title">ECOTH 2026</span>
-    <span class="year-card-sub">Coulees and Corridors · November 6, 2026</span>
-  </a>
-  <a href="/ECOTH2025/" class="year-card">
-    <img src="img/ecoth2025.jpg" alt="Organizers at ECOTH 2025">
-    <span class="year-card-title">ECOTH 2025</span>
-    <span class="year-card-sub">Inaugural conference · November 7, 2025</span>
-  </a>
-</div>
-
-<p>For information please contact:</p>
-
-<p><strong>ecoth.uleth@gmail.com</strong></p>
-
-            </div>
-            </div>
-        </div>
+  <h2>Choose a Conference Year</h2>
+  <div class="year-cards">
+    <a href="/ECOTH2026/" class="year-card">
+      <img src="img/river.jpg" alt="River valley">
+      <span class="year-card-title">ECOTH 2026</span>
+      <span class="year-card-sub">Coulees and Corridors · November 6, 2026</span>
+    </a>
+    <a href="/ECOTH2025/" class="year-card">
+      <img src="img/ecoth2025.jpg" alt="Organizers at ECOTH 2025">
+      <span class="year-card-title">ECOTH 2025</span>
+      <span class="year-card-sub">Inaugural conference · November 7, 2025</span>
+    </a>
+  </div>
+</main>
 
 <div class="land-acknowledgement">
   <h2>The University of Lethbridge</h2>
   <p>
-    Our University’s Blackfoot name is Iniskim, meaning Sacred Buffalo Stone.
-    The University of Lethbridge acknowledges and deeply appreciates the Siksikaitsitapi peoples’ connection
-    to their traditional territory. We, as people living and benefiting from Blackfoot Confederacy traditional territory,
-    honour the traditions of people who have cared for this land since time immemorial. We recognize the diverse
-    population of Aboriginal peoples who attend the University of Lethbridge and the contributions these Aboriginal
+    Our University’s Blackfoot name is Iniskim, meaning Sacred Buffalo Stone. 
+    The University of Lethbridge acknowledges and deeply appreciates the Siksikaitsitapi peoples’ connection 
+    to their traditional territory. We, as people living and benefiting from Blackfoot Confederacy traditional territory, 
+    honour the traditions of people who have cared for this land since time immemorial. We recognize the diverse 
+    population of Aboriginal peoples who attend the University of Lethbridge and the contributions these Aboriginal 
     peoples have made in shaping and strengthening the University community in the past, present, and in the future.
   </p>
 </div>

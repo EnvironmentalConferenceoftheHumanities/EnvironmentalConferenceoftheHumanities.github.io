@@ -13,35 +13,34 @@
 <header class="header">
   <!-- Header Image -->
   <div class="header-image-wrapper">
-    <img src="img/head_short.png" alt="Header Image" class="header-image">
+    <img src="img/head_short.png" alt="" class="header-image">
   </div>
 
-  <!-- Navigation Bar -->
+  <!-- Navigation Bar (shared across the hub and every conference year) -->
   <nav class="navbar">
-    <a href="index.html" class="logo">
-      <img src="img/ecoth_simple.png" alt="Logo">
+    <a href="/" class="logo">
+      <img src="img/ecoth_simple.png" alt="ECOTH Home">
     </a>
 
     <!-- MOBILE-ONLY HAMBURGER (CSS-only) -->
     <input type="checkbox" id="menu-toggle" class="menu-toggle">
     <label for="menu-toggle" class="hamburger-icon" aria-label="Toggle navigation" aria-controls="mobile-menu">☰</label>
 
-    <!-- Use a DIV (not a nested <nav>) to avoid UA styles on desktop -->
     <div class="hamburger-menu" id="mobile-menu" aria-label="Mobile">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="tips.html">Tips</a>
-      <a href="/ECOTH2025/">ECOTH 2025</a>
-      <a href="/ECOTH2026/">ECOTH 2026</a>
+      <a href="/">Home</a>
+      <a href="/history.html">History</a>
+      <a href="/tips.html" class="active" aria-current="page">Tips</a>
+      <a href="/ECOTH2025/">2025</a>
+      <a href="/ECOTH2026/">2026</a>
     </div>
 
-    <!-- Desktop image buttons -->
+    <!-- Desktop text buttons -->
     <div class="nav-buttons">
-      <a href="index.html"><img src="img/home.png" alt="Home Button"></a>
-      <a href="about.html"><img src="img/about.png" alt="About Button"></a>
-      <a href="tips.html"><img src="img/tips.png" alt="Tips Button"></a>
-      <a href="/ECOTH2025/" class="year-button">2025</a>
-      <a href="/ECOTH2026/" class="year-button">2026</a>
+      <a href="/">Home</a>
+      <a href="/history.html">History</a>
+      <a href="/tips.html" class="active" aria-current="page">Tips</a>
+      <a href="/ECOTH2025/">2025</a>
+      <a href="/ECOTH2026/">2026</a>
     </div>
   </nav>
 
