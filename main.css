@@ -394,48 +394,11 @@ h1 {
   color: #fff;
 }
 
-/* Conference-year sub-menu, directly under the header photo */
-.subnav {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 6px 10px;
-  padding: 10px 16px;
-  background: #4a6b4a;
-  font-family: 'Times New Roman', serif;
-}
-
-.subnav-label {
-  color: #fff;
-  font-size: 18px;
-  font-style: italic;
-  margin-right: 6px;
-}
-
-.subnav a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 4px 12px;
-  border: 1px solid transparent;
-  border-radius: 4px;
-}
-
-.subnav a:hover {
-  border-color: #fff;
-}
-
-.subnav a.active {
-  background: #fff;
-  color: #000;
-}
-
 /* Single-column pages (hub home, coming-soon pages) */
 .single {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 20px 16px;
+  padding: 20px 40px;
   box-sizing: border-box;
 }
 
@@ -455,4 +418,165 @@ h1 {
   padding: 8px 24px;
   border-left: 4px solid #4a6b4a;
   background: #f5f5f5;
+}
+
+/* History page: sponsor logos fill the left column */
+.left .sponsor-logos {
+  flex-direction: column;
+  gap: 28px;
+  padding: 10px 0 30px;
+}
+
+.left .sponsor-logos img {
+  width: auto;
+  max-width: 70%;
+  height: auto;
+  max-height: 120px;
+  object-fit: contain;
+}
+
+/* Year dropdowns in the desktop nav */
+.dropdown {
+  position: relative;
+}
+
+.nav-buttons .dropdown-toggle {
+  padding: 8px 16px;
+  background: #899783;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Times New Roman', serif;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.nav-buttons .dropdown-toggle:hover,
+.dropdown:focus-within .dropdown-toggle {
+  background: #a3b09d;
+}
+
+.nav-buttons .dropdown-toggle.active {
+  background: #4a6b4a;
+  color: #fff;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 190px;
+  padding-top: 6px;   /* hover bridge between button and menu */
+  z-index: 3000;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+  display: block;
+}
+
+.nav-buttons .dropdown-menu a {
+  display: block;
+  padding: 10px 16px;
+  background: #f5f5f5;
+  color: #000;
+  font-size: 18px;
+  text-align: left;
+  border-radius: 0;
+  border-left: 4px solid #899783;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.nav-buttons .dropdown-menu a:hover {
+  transform: none;
+  background: #dfe5dc;
+}
+
+.nav-buttons .dropdown-menu a.active {
+  background: #4a6b4a;
+  color: #fff;
+  border-left-color: #4a6b4a;
+}
+
+/* Mobile menu: year headings with their pages indented underneath */
+.navbar .hamburger-menu .menu-heading {
+  display: block;
+  color: #fff;
+  font-family: 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  margin: 0.9rem 0 0.4rem;
+}
+
+.navbar .hamburger-menu a.sub {
+  margin-left: 1.2rem;
+}
+
+/* Keep the nav (and its dropdowns) above the header title */
+.navbar {
+  z-index: 2500;
+}
+
+/* =========================================
+   PHOTO GALLERY
+   ========================================= */
+.gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 photos per row on large screens */
+  gap: 16px;
+}
+
+/* On medium screens: 2 per row */
+@media (max-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* On small screens: 1 per row */
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #ddd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.05);
+}
+
+/* Flipped two-column pages (Tips): text on the left on desktop,
+   and still first on phones */
+.container.flip {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+  .container.flip {
+    flex-direction: column-reverse;
+  }
+  .single {
+    padding: 20px 16px;
+  }
 }

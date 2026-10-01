@@ -5,21 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Environmental Conference of the Humanities</title>
-    <link rel="stylesheet" href="style_sheet.css">
-    <link rel="icon" type="image/x-icon" href="img/tree.ico">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="icon" type="image/x-icon" href="/img/tree.ico">
 </head>
 <body>
 
 <header class="header">
   <!-- Header Image -->
   <div class="header-image-wrapper">
-    <img src="img/head_short.png" alt="" class="header-image">
+    <img src="/img/head_short.png" alt="" class="header-image">
   </div>
 
   <!-- Navigation Bar (shared across the hub and every conference year) -->
   <nav class="navbar">
     <a href="/" class="logo">
-      <img src="img/ecoth_simple.png" alt="ECOTH Home">
+      <img src="/img/ecoth_simple.png" alt="ECOTH Home">
     </a>
 
     <!-- MOBILE-ONLY HAMBURGER (CSS-only) -->
@@ -30,17 +30,41 @@
       <a href="/">Home</a>
       <a href="/history.html" class="active" aria-current="page">History</a>
       <a href="/tips.html">Tips</a>
-      <a href="/ECOTH2025/">2025</a>
-      <a href="/ECOTH2026/">2026</a>
+      <span class="menu-heading">ECOTH 2025</span>
+      <a href="/ECOTH2025/index.html" class="sub">Overview</a>
+      <a href="/ECOTH2025/papers.html" class="sub">Call for Papers</a>
+      <a href="/ECOTH2025/program.html" class="sub">Program</a>
+      <a href="/ECOTH2025/photos.html" class="sub">Photos</a>
+      <span class="menu-heading">ECOTH 2026</span>
+      <a href="/ECOTH2026/index.html" class="sub">Overview</a>
+      <a href="/ECOTH2026/papers.html" class="sub">Call for Papers</a>
+      <a href="/ECOTH2026/program.html" class="sub">Program</a>
+      <a href="/ECOTH2026/photos.html" class="sub">Photos</a>
     </div>
 
-    <!-- Desktop text buttons -->
+    <!-- Desktop buttons; each year opens a dropdown of its pages -->
     <div class="nav-buttons">
       <a href="/">Home</a>
       <a href="/history.html" class="active" aria-current="page">History</a>
       <a href="/tips.html">Tips</a>
-      <a href="/ECOTH2025/">2025</a>
-      <a href="/ECOTH2026/">2026</a>
+      <div class="dropdown">
+        <button type="button" class="dropdown-toggle" aria-haspopup="true">2025 ▾</button>
+        <div class="dropdown-menu">
+          <a href="/ECOTH2025/index.html">Overview</a>
+          <a href="/ECOTH2025/papers.html">Call for Papers</a>
+          <a href="/ECOTH2025/program.html">Program</a>
+          <a href="/ECOTH2025/photos.html">Photos</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button type="button" class="dropdown-toggle" aria-haspopup="true">2026 ▾</button>
+        <div class="dropdown-menu">
+          <a href="/ECOTH2026/index.html">Overview</a>
+          <a href="/ECOTH2026/papers.html">Call for Papers</a>
+          <a href="/ECOTH2026/program.html">Program</a>
+          <a href="/ECOTH2026/photos.html">Photos</a>
+        </div>
+      </div>
     </div>
   </nav>
 
@@ -51,8 +75,14 @@
     <div class="container">
         <!-- Left Column -->
         <div class="left">
-            <img src="img/banff.jpg" alt="Project Image">
-            <p></p>
+            <div class="sponsor-logos">
+              <img src="img/uleth.png" alt="University of Lethbridge">
+              <img src="img/lpirg.png" alt="LPIRG">
+              <img src="img/el.jpg" alt="Environmental Lethbridge">
+              <img src="img/urbane.jpeg" alt="Urbane Eight">
+              <img src="img/analog.jpg" alt="Analog Books">
+              <img src="img/sill.jpeg" alt="Sill and Soil">
+            </div>
         </div>
 
         <!-- Right Column -->
@@ -66,15 +96,6 @@ ECOTH began as a small, course-based project that has since grown into a reality
 <p>
 This conference would not be possible without the generous support of sponsors from both the community and the University of Lethbridge. ECOTH has been sponsored by LPIRG (Lethbridge Public Interest Group), whose generous Event Grant has made them one of our biggest supporters. The English Department and the President/Provost Office have provided financial support. The Vice-Provost (Students), Environmental Lethbridge, and Urbane Eight have contributed by assisting with swag for our participants. A big thank you to our community partners like Analog Books, who have generously donated prizes for presenters, and Sill and Soil, who have provided lovely plants as decorations. Last but not least, Fresh Fork has provided lunch, snacks, and refreshments, and Conference Services has given us valuable advice and negotiated for the food on our behalf!
 </p>
-
-<div class="sponsor-logos">
-  <img src="img/uleth.png" alt="University of Lethbridge">
-  <img src="img/lpirg.png" alt="LPIRG">
-  <img src="img/el.jpg" alt="Environmental Lethbridge">
-  <img src="img/urbane.jpeg" alt="Urbane Eight">
-  <img src="img/analog.jpg" alt="Analog Books">
-  <img src="img/sill.jpeg" alt="Sill and Soil">
-</div>
 
             </div>
             </div>  
